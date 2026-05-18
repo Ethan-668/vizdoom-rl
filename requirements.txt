@@ -1,0 +1,10 @@
+vizdoom
+gymnasium
+stable-baselines3
+opencv-python
+imageio
+numpy
+matplotlib
+tensorboard
+torch
+sample-factory

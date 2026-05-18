@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Local IDE / agent state
+.vscode/
+.idea/
+.codex/
+.agents/
+
+# ViZDoom local runtime files
+_vizdoom/
+_vizdoom.ini
+vizdoom-crash.log
+
+# Training outputs and large generated artifacts
+models/
+videos/
+logs/
+final_artifacts/
+runs/
+checkpoints/
+*.tfevents*
+
+# Large binary model/video files, wherever they appear
+*.pt
+*.pth
+*.ckpt
+*.zip
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# OS files
+.DS_Store
+Thumbs.db

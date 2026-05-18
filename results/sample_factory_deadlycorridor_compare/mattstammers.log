@@ -1,0 +1,133 @@
+[2026-05-16 13:39:49,547][2895911] register_encoder_factory: <function make_vizdoom_encoder at 0x70057d905b40>
+fatal: not a git repository (or any of the parent directories): .git
+[2026-05-16 13:39:49,553][2895911] Could not query the git revision for the logs, perhaps git is not available
+[2026-05-16 13:39:49,553][2895911] Loading existing experiment configuration from models/sample_factory_deadlycorridor_compare_train_dir/mattstammers/config.json
+[2026-05-16 13:39:49,553][2895911] Overriding arg 'experiment' with value 'mattstammers' passed from command line
+[2026-05-16 13:39:49,553][2895911] Overriding arg 'train_dir' with value 'models/sample_factory_deadlycorridor_compare_train_dir' passed from command line
+[2026-05-16 13:39:49,553][2895911] Adding new argument 'no_render'=True that is not in the saved config file!
+[2026-05-16 13:39:49,554][2895911] Adding new argument 'save_video'=True that is not in the saved config file!
+[2026-05-16 13:39:49,554][2895911] Adding new argument 'video_frames'=8000 that is not in the saved config file!
+[2026-05-16 13:39:49,554][2895911] Adding new argument 'video_name'='mattstammers_native640_eval.mp4' that is not in the saved config file!
+[2026-05-16 13:39:49,554][2895911] Adding new argument 'max_num_frames'=1000000000.0 that is not in the saved config file!
+[2026-05-16 13:39:49,554][2895911] Adding new argument 'max_num_episodes'=10 that is not in the saved config file!
+[2026-05-16 13:39:49,554][2895911] Adding new argument 'push_to_hub'=False that is not in the saved config file!
+[2026-05-16 13:39:49,554][2895911] Adding new argument 'hf_repository'=None that is not in the saved config file!
+[2026-05-16 13:39:49,554][2895911] Adding new argument 'policy_index'=0 that is not in the saved config file!
+[2026-05-16 13:39:49,554][2895911] Adding new argument 'eval_deterministic'=False that is not in the saved config file!
+[2026-05-16 13:39:49,554][2895911] Adding new argument 'train_script'=None that is not in the saved config file!
+[2026-05-16 13:39:49,554][2895911] Adding new argument 'enjoy_script'=None that is not in the saved config file!
+[2026-05-16 13:39:49,554][2895911] Adding new argument 'record_to'=None that is not in the saved config file!
+[2026-05-16 13:39:49,554][2895911] Using frameskip 1 and render_action_repeat=4 for evaluation
+[2026-05-16 13:39:49,578][2895911] Doom resolution: 640x480, resize resolution: (128, 72)
+/home/miaoyunlong/miniconda3/envs/vizdoom-rl/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.num_agents to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.num_agents` for environment variables or `env.get_wrapper_attr('num_agents')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/miaoyunlong/miniconda3/envs/vizdoom-rl/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.is_multiagent to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.is_multiagent` for environment variables or `env.get_wrapper_attr('is_multiagent')` that will search the reminding wrappers.[0m
+  logger.warn(
+[2026-05-16 13:39:49,579][2895911] RunningMeanStd input shape: (3, 72, 128)
+[2026-05-16 13:39:49,579][2895911] RunningMeanStd input shape: (1,)
+[2026-05-16 13:39:49,585][2895911] ConvEncoder: input_channels=3
+[2026-05-16 13:39:49,651][2895911] Conv encoder output size: 512
+[2026-05-16 13:39:49,651][2895911] Policy head output size: 512
+[2026-05-16 13:39:49,883][2895911] Loading state from checkpoint models/sample_factory_deadlycorridor_compare_train_dir/mattstammers/checkpoint_p0/checkpoint_000002874_11771904.pth...
+[2026-05-16 13:39:50,768][2895911] Num frames 100...
+[2026-05-16 13:39:51,205][2895911] Num frames 200...
+[2026-05-16 13:39:51,287][2895911] Avg episode rewards: #0: 22.804, true rewards: #0: 22.804
+[2026-05-16 13:39:51,287][2895911] Avg episode reward: 22.804, avg true_objective: 22.804
+[2026-05-16 13:39:51,713][2895911] Num frames 300...
+[2026-05-16 13:39:52,173][2895911] Num frames 400...
+[2026-05-16 13:39:52,307][2895911] Avg episode rewards: #0: 22.793, true rewards: #0: 22.793
+[2026-05-16 13:39:52,307][2895911] Avg episode reward: 22.793, avg true_objective: 22.793
+[2026-05-16 13:39:52,677][2895911] Num frames 500...
+[2026-05-16 13:39:53,110][2895911] Num frames 600...
+[2026-05-16 13:39:53,184][2895911] Avg episode rewards: #0: 22.782, true rewards: #0: 22.782
+[2026-05-16 13:39:53,184][2895911] Avg episode reward: 22.782, avg true_objective: 22.782
+[2026-05-16 13:39:53,625][2895911] Num frames 700...
+[2026-05-16 13:39:53,871][2895911] Avg episode rewards: #0: 18.615, true rewards: #0: 18.615
+[2026-05-16 13:39:53,872][2895911] Avg episode reward: 18.615, avg true_objective: 18.615
+[2026-05-16 13:39:54,123][2895911] Num frames 800...
+[2026-05-16 13:39:54,554][2895911] Num frames 900...
+[2026-05-16 13:39:54,658][2895911] Avg episode rewards: #0: 16.810, true rewards: #0: 16.810
+[2026-05-16 13:39:54,658][2895911] Avg episode reward: 16.810, avg true_objective: 16.810
+[2026-05-16 13:39:55,068][2895911] Num frames 1000...
+[2026-05-16 13:39:55,538][2895911] Num frames 1100...
+[2026-05-16 13:39:55,625][2895911] Avg episode rewards: #0: 17.806, true rewards: #0: 17.806
+[2026-05-16 13:39:55,626][2895911] Avg episode reward: 17.806, avg true_objective: 17.806
+[2026-05-16 13:39:56,035][2895911] Num frames 1200...
+[2026-05-16 13:39:56,487][2895911] Num frames 1300...
+[2026-05-16 13:39:56,567][2895911] Avg episode rewards: #0: 18.522, true rewards: #0: 18.522
+[2026-05-16 13:39:56,567][2895911] Avg episode reward: 18.522, avg true_objective: 18.522
+[2026-05-16 13:39:56,857][2895911] Avg episode rewards: #0: 16.281, true rewards: #0: 16.281
+[2026-05-16 13:39:56,858][2895911] Avg episode reward: 16.281, avg true_objective: 16.281
+[2026-05-16 13:39:57,076][2895911] Num frames 1400...
+[2026-05-16 13:39:57,568][2895911] Num frames 1500...
+[2026-05-16 13:39:56,952][2895911] Avg episode rewards: #0: 17.009, true rewards: #0: 17.009
+[2026-05-16 13:39:56,952][2895911] Avg episode reward: 17.009, avg true_objective: 17.009
+[2026-05-16 13:39:57,125][2895911] Num frames 1600...
+[2026-05-16 13:39:57,636][2895911] Num frames 1700...
+[2026-05-16 13:39:58,036][2895911] Avg episode rewards: #0: 17.587, true rewards: #0: 17.587
+[2026-05-16 13:39:58,036][2895911] Avg episode reward: 17.587, avg true_objective: 17.587
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/sf2_miaoyunlong/mattstammers_native640_eval.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41
+    encoder         : Lavf59.27.100
+  Duration: 00:00:50.92, start: 0.000000, bitrate: 5399 kb/s
+  Stream #0:0(und): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p, 640x480 [SAR 1:1 DAR 4:3], 5398 kb/s, 35 fps, 35 tbr, 17920 tbn, 35 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (mpeg4 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x5d274118b8c0] using SAR=1/1
+[libx264 @ 0x5d274118b8c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x5d274118b8c0] profile High, level 3.1, 4:2:0, 8-bit
+[libx264 @ 0x5d274118b8c0] 264 - core 163 r3060 5db6aa6 - H.264/MPEG-4 AVC codec - Copyleft 2003-2021 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=15 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'models/sample_factory_deadlycorridor_compare_train_dir/mattstammers/mattstammers_native640_eval.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41
+    encoder         : Lavf58.76.100
+  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 640x480 [SAR 1:1 DAR 4:3], q=2-31, 35 fps, 17920 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc58.134.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=  215 fps=0.0 q=30.0 size=     768kB time=00:00:04.37 bitrate=1439.3kbits/s speed=8.51x    frame=  403 fps=398 q=30.0 size=    2048kB time=00:00:09.74 bitrate=1722.0kbits/s speed=9.61x    frame=  599 fps=395 q=30.0 size=    3072kB time=00:00:15.34 bitrate=1640.2kbits/s speed=10.1x    frame=  789 fps=390 q=30.0 size=    4096kB time=00:00:20.77 bitrate=1615.4kbits/s speed=10.3x    frame=  982 fps=389 q=30.0 size=    5376kB time=00:00:26.28 bitrate=1675.5kbits/s speed=10.4x    frame= 1168 fps=386 q=30.0 size=    6400kB time=00:00:31.60 bitrate=1659.1kbits/s speed=10.4x    frame= 1354 fps=384 q=30.0 size=    7680kB time=00:00:36.91 bitrate=1704.3kbits/s speed=10.5x    frame= 1543 fps=383 q=30.0 size=    8704kB time=00:00:42.31 bitrate=1685.1kbits/s speed=10.5x    frame= 1730 fps=382 q=30.0 size=    9728kB time=00:00:47.65 bitrate=1672.2kbits/s speed=10.5x    frame= 1782 fps=369 q=-1.0 Lsize=   10624kB time=00:00:50.82 bitrate=1712.3kbits/s speed=10.5x    
+video:10611kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.127597%
+[libx264 @ 0x5d274118b8c0] frame I:8     Avg QP:22.27  size: 32570
+[libx264 @ 0x5d274118b8c0] frame P:1366  Avg QP:25.50  size:  6609
+[libx264 @ 0x5d274118b8c0] frame B:408   Avg QP:27.77  size:  3865
+[libx264 @ 0x5d274118b8c0] consecutive B-frames: 65.2%  9.0% 11.4% 14.4%
+[libx264 @ 0x5d274118b8c0] mb I  I16..4:  1.9% 80.5% 17.6%
+[libx264 @ 0x5d274118b8c0] mb P  I16..4:  1.1% 14.0%  1.2%  P16..4: 45.1% 12.1%  4.6%  0.0%  0.0%    skip:22.0%
+[libx264 @ 0x5d274118b8c0] mb B  I16..4:  0.8%  6.1%  0.5%  B16..8: 39.3% 11.2%  1.6%  direct: 2.5%  skip:37.8%  L0:62.3% L1:34.6% BI: 3.1%
+[libx264 @ 0x5d274118b8c0] 8x8 transform intra:85.1% inter:80.3%
+[libx264 @ 0x5d274118b8c0] coded y,uvDC,uvAC intra: 62.3% 36.0% 11.6% inter: 24.5% 12.9% 0.9%
+[libx264 @ 0x5d274118b8c0] i16 v,h,dc,p: 64% 15% 17%  5%
+[libx264 @ 0x5d274118b8c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 23% 16% 43%  3%  3%  3%  3%  3%  4%
+[libx264 @ 0x5d274118b8c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 40% 19% 16%  4%  4%  4%  5%  4%  4%
+[libx264 @ 0x5d274118b8c0] i8c dc,h,v,p: 66% 14% 19%  2%
+[libx264 @ 0x5d274118b8c0] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x5d274118b8c0] ref P L0: 77.3% 11.7%  7.3%  3.7%
+[libx264 @ 0x5d274118b8c0] ref B L0: 89.7%  7.9%  2.3%
+[libx264 @ 0x5d274118b8c0] ref B L1: 97.9%  2.1%
+[libx264 @ 0x5d274118b8c0] kb/s:1707.15
+[2026-05-16 13:40:05,942][2895911] Replay video saved to models/sample_factory_deadlycorridor_compare_train_dir/mattstammers/mattstammers_native640_eval.mp4!
+(0, 17.58657249212265)
+ERROR conda.cli.main_run:execute(148): `conda run python scripts/sample_factory/enjoy_vizdoom_hd_torch26.py --algo=APPO --env=doom_deadly_corridor --train_dir=models/sample_factory_deadlycorridor_compare_train_dir --experiment=mattstammers --max_num_episodes=10 --save_video --video_frames=8000 --video_name=mattstammers_native640_eval.mp4 --no_render --device=gpu` failed. (See above for error)
