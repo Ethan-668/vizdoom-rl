@@ -1,10 +1,10 @@
 # ViZDoom Reinforcement Learning
 
-这是一个基于 ViZDoom 的强化学习实验项目，主要包含 DefendCenter 和 DeadlyCorridor 两类环境中的训练、评估、录像和结果分析脚本。
+这是一个基于 ViZDoom 的强化学习实验项目，主要包含 DefendCenter 和 DeadlyCorridor 两类环境中的训练、评估、录像和结果分析。
 
 ## 项目内容
 
-- `scripts/`: 训练、评估、录像、诊断和绘图脚本
+- `scripts/`: 精简后的核心训练、评估、录像和复现脚本
 - `configs/`: DeadlyCorridor 自定义场景配置
 - `results/`: 实验结果、图表和项目总结
 
@@ -25,13 +25,13 @@ pip install -r requirements.txt
 训练 DefendCenter PPO：
 
 ```bash
-python scripts/train_ppo_defendcenter.py --timesteps 500000
+python scripts/train_ppo_defendcenter.py --total-timesteps 500000
 ```
 
-评估 DefendCenter PPO：
+评估 DefendCenter 模型：
 
 ```bash
-python scripts/eval_ppo_defendcenter.py --model models/ppo_defendcenter_500k.zip
+python scripts/eval_defendcenter_general.py --algo ppo --model models/ppo_defendcenter_500k.zip
 ```
 
 训练 DeadlyCorridor curriculum：
@@ -39,6 +39,40 @@ python scripts/eval_ppo_defendcenter.py --model models/ppo_defendcenter_500k.zip
 ```bash
 python scripts/train_ppo_deadlycorridor_rldoom_v2_curriculum.py
 ```
+
+评估 DeadlyCorridor RLDoom v2：
+
+```bash
+python scripts/eval_ppo_deadlycorridor_rldoom_v2.py --model models/deadlycorridor_rldoom_v2/ppo_rldoom_v2_curriculum_final.zip
+```
+
+## 保留脚本
+
+DefendCenter:
+
+- `scripts/train_ppo_defendcenter.py`
+- `scripts/train_a2c_defendcenter.py`
+- `scripts/train_dqn_defendcenter.py`
+- `scripts/eval_defendcenter_general.py`
+- `scripts/eval_random_defendcenter.py`
+- `scripts/record_hd_general_defendcenter.py`
+
+DeadlyCorridor:
+
+- `scripts/deadlycorridor_rldoom_env_v2.py`
+- `scripts/train_ppo_deadlycorridor_rldoom_v2_curriculum.py`
+- `scripts/eval_ppo_deadlycorridor_rldoom_v2.py`
+- `scripts/record_hd_deadlycorridor_rldoom_v2.py`
+
+Smoke tests:
+
+- `scripts/test_env.py`
+- `scripts/test_deadlycorridor_rldoom_env_v2.py`
+
+Sample Factory:
+
+- `scripts/sample_factory/enjoy_vizdoom_torch26.py`
+- `scripts/sample_factory/enjoy_vizdoom_hd_torch26.py`
 
 ## 结果摘要
 
